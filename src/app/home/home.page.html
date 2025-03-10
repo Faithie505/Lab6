@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Provinces of ireland
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Provinces of ireland</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <ul>
+      <!--routerlink changes the url of the site-->
+      <!--When Ulster is clicked in the list, navigates to the ulster page-->
+      <li [routerLink] = "['/ulster']">Ulster</li> 
+      <!--When Munster is clicked in the list, navigates to the Munster page-->
+      <li [routerLink] = "['/munster']">Munster</li>
+      <!--When Connaught is clicked in the list, navigates to the Connaught page-->
+      <li [routerLink] = "['/connaught']">Connaught</li>
+      <!--When Leinster is clicked in the list, navigates to the Leinster pag-->
+      <li [routerLink] = "['/leinster']">Leinster</li>
+    </ul>
+
+    
   </div>
 </ion-content>

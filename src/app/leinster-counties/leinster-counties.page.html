@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!--allows us to go back  by making a back button-->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!--displays title to screen-->
+    <ion-title>LeinsterCounties</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--make sthe content take up the entire screen-->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">LeinsterCounties</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ul>
+    <!--uses ngFor to print out the counties from the array in leinster-counties.ts-->
+    <li *ngFor="let x of counties">
+      {{x}} <!--uses databinding to display the counties-->
+
+    </li>
+  </ul>
+</ion-content>
